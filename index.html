@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="keywords" content="sally, student, sally student">
-	<meta name="description" content="About me page of Sally student">
-	<meta name="author" content="Steven M. Uyeda">
-		<title>Sally Student</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<div>
- 	 <h1>Sally Student</h1>
-  		<p>I'm an aspiring full stack web developer. I love cats, coding, and crocheting. </p>
- 	 <h2>Skills</h2>
- 		 <ul>
-  			 <li>HTML</li>
-  			 <li>CSS</li>
-   			 <li>JavaScript</li>
-   			 <li>jQuery</li>
- 		 </ul>
-  	<h2>Contact Info</h2>
-  		<p>Twitter:
-   			 <a href="https:twitter.com/sallyStudent">@sallyStudent</a>
- 		 </p>
-</div>
+	<div class="cards">
+
+		<div class="contact">Contact Me</div>
+		<div class="contact-form">
+			<a href="#" class="close"><i class="fa fa-times"></i></a>
+			<form>
+				<div class="control"><input type="text"  id="name"/><label for="name">Your Name</label></div>
+				<div class="control"><input type="text"  id="email"/><label for="email">Email Address</label></div>
+				<div class="control"><input type="text"  id="url"/><label for="url">Website</label></div>
+				<div class="control"><textarea name="" id="message"></textarea><label for="message">Message</label></div>
+				<div class="control submit"><input type="submit" /></div>
+			</form>
+		</div>
+
+		 <div class="card active" id="overview">
+			<a class="card-toggle"><i class="fa fa-arrow-circle-left"></i></a>
+			<div class="card-content">
+				<div class="row">
+					<div class="left col">
+						<h2>Personal <strong>Social Card</strong></h2>
+
+						<p>Click one of the social icons below to switch between card or click Contact Me link to show the contact form card. <br /><em>Make sure you're running this experiment in the latest Chrome browser.</em></p>
+
+					</div>
+					<div class="right col">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="card" id="dribbble">
+			<a class="card-toggle"><i><span class="fa fa-dribbble"></span></i></a>
+			<div class="card-content">
+				<div class="row">
+					<div class="left col">
+						<h2>My <strong>Dribbble</strong></h2>
+
+						<p>In ipsa reiciendis, eligendi labore dolores delectus facere perferendis ex architecto reprehenderit maxime exercitationem, libero itaque, at voluptatibus! Sit obcaecati repellat incidunt accusantium voluptas suscipit a consequuntur repudiandae nulla eius.</p>
+
+					</div>
+					<div class="right col"><img src="https://dl.dropboxusercontent.com/u/26808427/cdn/preview.jpg" alt="" /></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" id="behance">
+			<a class="card-toggle"><i><span class="fa fa-behance"></span></i></a>
+			<div class="card-content">
+				<div class="row">
+					<div class="left col">
+						<h2>My <strong>Behance</strong></h2>
+						<p>Quia fugit animi, iure error veritatis? Ipsa quis, deserunt illum culpa ab id mollitia nesciunt commodi aut dolores vero ipsam ut minima neque nam excepturi corporis obcaecati consequuntur accusantium laborum!</p>
+					</div>
+					<div class="right col"><img src="https://dl.dropboxusercontent.com/u/26808427/cdn/preview.jpg" alt="" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="linkedin">
+			<a class="card-toggle"><i><span class="fa fa-linkedin"></span></i></a>
+			<div class="card-content">
+				<div class="row">
+					<div class="left col">
+						<h2>My <strong>LinkedIn</strong></h2>
+
+						<p>Voluptas aliquam, perferendis laboriosam, cumque, autem vero pariatur dolorum tempora sint hic laborum distinctio suscipit magnam, porro provident maxime labore. Porro vel error quaerat consequatur sapiente? Nostrum at voluptatibus necessitatibus.</p>
+					</div>
+					<div class="right col"><img src="https://dl.dropboxusercontent.com/u/26808427/cdn/preview.jpg" alt="" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="twitter">
+			<a class="card-toggle"><i><span class="fa fa-twitter"></span></i></a>
+			<div class="card-content">
+				<div class="row">
+					<div class="left col">
+						<h2>My <strong>Twitter</strong></h2>
+
+						<p>Fugit veniam, animi architecto doloribus veritatis vitae sint doloremque possimus quae. Pariatur libero, veniam voluptatibus alias distinctio qui nostrum debitis voluptate amet hic repellat officiis nam quos vel doloremque praesentium.</p>
+					</div>
+					<div class="right col"><img src="https://dl.dropboxusercontent.com/u/26808427/cdn/preview.jpg" alt="" /></div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
